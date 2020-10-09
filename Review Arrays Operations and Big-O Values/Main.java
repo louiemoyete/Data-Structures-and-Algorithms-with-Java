@@ -44,16 +44,42 @@ public class Main {
 
         for( int i = 0; i < arr2.length; i++ )
             { System.out.println( arr2[ i ] ); }
+
+
+
+        int[] arr3 = { 20, 35, -15, 7, 55, 1, -22 };
+
+        for( int lastUnsortedIndex = arr3.length - 1; lastUnsortedIndex > 0; lastUnsortedIndex-- )
+        {
+            int largest = 0;
+            for( int i = 1; i <= lastUnsortedIndex; i++ )
+            {
+                if( arr3[ i ] > arr3[ largest ] )
+                    { largest = i; }
+            }
+            swap2( arr3, largest, lastUnsortedIndex );
+        }
+        for( int i = 0; i < arr3.length; i++ )
+            { System.out.println( arr3[ i ] ); }
     }
 
-    public static void swap( int[] array, int i, int j )
+    public static void swap( int[] arr, int i, int j )
     {
         if( i==j )
             { return; }
 
-        int temp = array[ i ];
-        array[ i ] = array[ j ];
-        array[ j ] = temp;
+        int temp = arr[ i ];
+        arr[ i ] = arr[ j ];
+        arr[ j ] = temp;
 
+    }
+    public static void swap2( int[] arr, int i, int j )
+    {
+        if( i==j )
+        { return; }
+
+        int temp = arr[ i ];
+        arr[ i ] = arr[ j ];
+        arr[ j ] = temp;
     }
 }

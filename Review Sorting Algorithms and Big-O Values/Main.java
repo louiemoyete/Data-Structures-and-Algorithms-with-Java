@@ -28,7 +28,7 @@ public class Main
             }
         }
 
-        System.out.println( "index = " + index );
+        System.out.println( "index = " + ind );
 
 
         int[] arr2 = { 20, 35, -15, 7, 55, 1, -22 };

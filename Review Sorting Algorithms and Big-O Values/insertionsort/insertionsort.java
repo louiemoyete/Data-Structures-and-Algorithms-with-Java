@@ -1,10 +1,7 @@
+package insertionsort;
 
 
-
-
-
-
-public class Main 
+public class insertionsort
 {
 	public static void main( String[] args )
 	{

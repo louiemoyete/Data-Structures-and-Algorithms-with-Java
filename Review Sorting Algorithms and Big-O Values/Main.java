@@ -29,8 +29,6 @@ public class Main
         }
 
         System.out.println( "index = " + ind );
-
-
         int[] arr2 = { 20, 35, -15, 7, 55, 1, -22 };
 
         for( int lastUnsortedIndex = arr2.length - 1; lastUnsortedIndex > 0; lastUnsortedIndex-- )
@@ -44,8 +42,6 @@ public class Main
 
         for( int i = 0; i < arr2.length; i++ )
             { System.out.println( arr2[ i ] ); }
-
-
 
         int[] arr3 = { 20, 35, -15, 7, 55, 1, -22 };
 
@@ -67,17 +63,14 @@ public class Main
     {
         if( i==j )
             { return; }
-
         int temp = arr[ i ];
         arr[ i ] = arr[ j ];
         arr[ j ] = temp;
-
     }
     public static void swap2( int[] arr, int i, int j )
     {
         if( i==j )
         { return; }
-
         int temp = arr[ i ];
         arr[ i ] = arr[ j ];
         arr[ j ] = temp;
